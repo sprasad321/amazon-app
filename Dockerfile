@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y openjdk-11-jdk wget ca-certificates tar
     && rm -rf /var/lib/apt/lists/*
 
 # 3. Download and install Tomcat
-RUN wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.108/bin/apache-tomcat-9.0.108.tar.gz -P /tmp \
+RUN wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.109/bin/apache-tomcat-9.0.109.tar.gz -P /tmp \
     && tar xzvf /tmp/apache-tomcat-9.0.108.tar.gz -C /opt \
     && mv /opt/apache-tomcat-9.0.108 /opt/tomcat \
     && rm /tmp/apache-tomcat-9.0.108.tar.gz
